@@ -1,0 +1,180 @@
+Exercices
+
+Git and github
+
+1. How do you set your Git username and email for all your local repositories?
+ git config --global user.name"Beatice Friberg"
+ git config --global user.email"beatricefriberg@hotmail.com
+
+2. How do you initialize a git repo inside a local map in your computer?
+git init .
+
+3. In Visual Studio Code (VSC) what mean U, M and A on the right side of each files?
+U = Untracked
+A = Added
+M = Modified
+
+4. What are you doing when you make a commit?
+You are commiting to recent changes, and showing the files in its current form. it's also so that ypu can go back throug previuos versions. 
+
+5. Explain what you need to do to push local files to a GitHub repo.
+First you need to make sure all the files are tracked with git add .
+After that you can commit all the files with git commit -m "a message"
+If all has gone well you can now write git push -u [alias] main
+
+6. Explain why sometimes one need to create new branches in Git.
+To keep developing on a different site without affecting the main part of the project. 
+
+7. How check the state of a repo?
+git status
+
+8. How do you check the version of your git application?
+git version
+
+For more exercices: https://www.w3schools.com/git/git_exercises.asp?remote=github
+
+HTML
+
+1. What is the first declaration in an HTML5 document?
+<!DOCTYPE html>
+
+2. Give the main structure of an HTML document.
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+
+<body>
+<header></header>
+<main></main>
+</body>
+
+</html>
+
+3. Why do we need meta data in head element?
+To specifiy more about the html document that we are creating, for example specifiy witch character set to be used, or the author of the document. You can also add things to help an automatic reader to get information about the document. The meta data is extra information for the browser and google spiders about the document. 
+Examples: 
+<meta charset="UTF-8"> to define all characters as UTF-8
+
+4. What is an attribute?
+An attribute is additional information for a element
+
+5. Which attribute you used to specify the default language and in which element it should be?
+The attribute lang is used to specifiy language. It is used in the html element (<html></html>), in the opening tag.
+Examples:
+<html lang="en"></html> for english documents
+<html lang="sv"></html> for swedish documents
+
+6. What is the difference between head and header elements?
+The head element contains the metadata about the document/webpage.
+The header element represents a container for introductury content and/or navigations links for the doucument/webpage
+
+7. What represents W3C?
+World Wide Web Consortium
+
+8. What is a validator? Give the url of w3c official validator.
+A validator is something that checks code for syntax errors or other related errors/warnings according to a unviversal standard
+https://validator.w3.org/#validate_by_input
+
+9. What is main objective of HTML code?
+To write webpages. The structure is the main objective.
+
+10. How to write a main- and sub-rubric in a webpage?
+h1 is used for the main rubric, can only appear once on each document
+sub-rubric is used with the element h2, h3, h4 etc. 
+
+<h1>Introduction</h1>
+
+<h2>Html</h2>
+
+11. How to add an hyperlink to medieinstitutet site?
+At the line where the hyperlink is to be added, you can write <a href="the_link"></a>
+
+so <a href="https://medieinstitutet.se">medieinstitutet.se</a>
+
+12. Create a simple menu with links to each rubric of a webpage.
+<nav>
+  <ul>
+    <li><a href="#rubric1">Rubric 1</a><li>
+    <li><a href="#rubric2">Rubric 2</a><li>
+    <li><a href="#rubric3">Rubric 3</a><li>
+  </ul>
+</nav>
+
+# refers to a id at the specified rubric
+
+13. How to define the character set to be UTF-8?
+<meta charset="UTF-8">
+
+14. How to insert a paragraph?
+<p></p>
+
+15. Does all element in HTML5 have an end tag?
+No, not all. 
+
+16. Give an two examples of HTML5 elements that do not have an end tag.
+meta and br
+Example:
+<meta charset="utf-8">
+<br> 
+
+17. Create an ordered list with 3 items.
+<ol>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+</ol>
+
+18. Create an unordered list with 3 items.
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+</ul>
+
+19. Create a definition list with 2 items.
+<dl>
+  <dt>Thing one</dt>
+  <dd>Definition of this thing</dd>
+  <dt>Thing two</dt>
+  <dd>Definition of this thing</dd>
+</dl>
+
+20. Create a download link to a local file.
+We use attribute "download" in a anchor element (<a>)
+<a href="the_link" download>Email<a/>
+
+21. What means semantic?
+a sort of language, so for html you use html specific semantic. semantic mean meaning.
+
+22. What is the difference between the elements article and section?
+A article element is selected when the content is very specific, 
+a section element is used when the content is more general.
+
+23. What are entities? give 2 examples.
+&li; <
+&gt; >
+&copy; [copyright character]
+
+An entitie is a way to write certian characters that are not standard, and usually does not appear on a keyboard. A entitie always start with a and (&) character and ends with a semicolon (;) 
+
+24. How to set bold and italic text?
+<b></b> to set bold (you can also use <strong></strong> for strong)
+<i></i> to set italic (you can also use <em></em> for emphasized) 
+
+25. What is the point to have a title element inside the head element?
+Everything in the body element is shown on the webpage. The title in the head element is to simple show a text that explains some about the page in the tab without seeing the content of the page. 
+
+26. How to insert a comment in HTML?
+<!-- Add your comment here -->
+
+27. What is purpose of the main element?
+The purpose of the main element is to show where the main content of the document/page is located. This is separeted from header and footer.
+There can only be one main element per document
+
+28. Add 10 empty lines in HTML doc with VSC
+brx10 and then return, produces ten empty lines:
+<br><br><br><br><br><br><br><br><br><br>
