@@ -44,3 +44,7 @@ Table data (td) - data i den raden, nested i tr
 Table Foot (tfoot) - sista raden, exempelvis en summering 
 Scope = Row eller col
 Colspan/Rowspan
+
+
+Form -
+Get, är defoult mindre säkert,  och Post, post är mer "hemligt" 
