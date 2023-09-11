@@ -10,3 +10,23 @@ Values and units
 -rem
 -%
 
+
+id - specific to a single element. unique. A element can have only one id 
+class - can be assigned to mulitple elements. Not unique. A element can have mulitple classes
+
+: - pseudo classes, first-letter osv 
+
+
+padding top right bottom left 
+margin top right bottom left 
+margin använder man för viewpoints storlek
+padding finns runt om varje objekt (element)
+
+Center image (and make it responsive)
+
+display:block
+margin:auto;
+padding:auto;
+
+max-width:100%;
+height:auto;

@@ -1,5 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body, html {
     height: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -7,6 +14,7 @@ body {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 header {
@@ -16,23 +24,68 @@ header {
 h1 {
     color: #ffffff;
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 60px;
+    margin: 10px;
+}
+h1:active {
+    color: green;
 }
 
-#box{
-    background-color:antiquewhite;
+nav{
+    text-align: center;
+    padding:10px;
     margin: 10px;
-    padding: 10px;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    padding:10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    color:darkgreen;
+    text-decoration: underline;
+}
+
+.box{
+    background-color:antiquewhite;
+    margin: 30px;
+    padding: 20px;
     border-radius: 8px;
+    opacity: 80%;
     
 }
 
-#box h2 {
+.box h2 {
     text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin: 10px;
+
 }
 
-#box p {
+.box p {
     text-align: justify;
     text-justify: inter-word;
+    font-size: 120%;
+    margin-bottom: 20px;
 }
+
+.box img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.box figcaption{
+    text-align: center;
+    margin: 10px;
+}
+
