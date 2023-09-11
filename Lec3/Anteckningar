@@ -1,0 +1,30 @@
+Image formats:
+	- APNG
+		○ Animated Portable Network Graphics for lossless animation sequence. Better performance than GIF
+	- AVIF
+		○ Both images and animations. High performances and better compression than PNG and JPEG
+	- GIF
+		○ Graphics Interchange Format. Good for simple Images and animations
+	- JPEG
+		○ Joint Photographic Expert Group. Good choice for lossy compression of still images
+	- PNG
+		○ Portable Network Graphics- Better quality than JPEG and can handle transparency 
+	- SVG
+		○ Scalable Vector Graphics. Ideal for Logos, Icons, all graphics that need to be precise and scalable
+	- WebP
+		○ Web picture format. Best compression for still images with transparency, animation
+
+
+Free Softwares
+
+Bitmap graphics
+	1. GIMP
+	2. Krita
+	3. Photoshop
+
+Vector Graphics
+	1. Inkscape
+
+
+SVG finns inbyggt i HTML
+<svg></svg>
