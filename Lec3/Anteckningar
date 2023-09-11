@@ -28,3 +28,19 @@ Vector Graphics
 
 SVG finns inbyggt i HTML
 <svg></svg>
+
+
+Video/Audio format:
+- OGG, Open format, ingen copyright. Rekommenderas att använda 
+
+
+Table 
+Caption
+Table head (thead) - övre kolumner
+table Body (tbody) - innehållet i tabellen 
+Table h (th) - "rubrikerna 
+Table row (tr) - nestad i thead, tbody, tfoot
+Table data (td) - data i den raden, nested i tr
+Table Foot (tfoot) - sista raden, exempelvis en summering 
+Scope = Row eller col
+Colspan/Rowspan

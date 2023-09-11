@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises Lecture 3</title>
+</head>
+<body>
+    <header>
+        <h1>Exercises Lec3</h1>
+    </header>
+<main>
+    <section>
+        <h2>Loading attribute in img</h2>
+
+<img src="media/mushrooms-8232731_1280.png" alt="Svampar som växer på mossa"  loading="lazy" width="500">
+    </section>
+    <section>
+        <h2>Video and Audio</h2>
+        <h3>Video</h3>
+        <figure>
+            <figcaption>Kossor på en äng</figcaption>
+            <video  autoplay muted controls loop width="500">
+            <source src="media/cows.mp4" type="video/mp4">
+        </video>
+        </figure><br>
+        <h2>Audio</h2>
+        <figure>
+            <figcaption>Hör hur kossorna låter:</figcaption>
+            <audio controls loop src="media/mooing-cow-122255.mp3"></audio>
+        </audio>
+        </figure>
+    </section>
+    <section>
+        <h2 >Table</h2>
+        <table border="1">
+            <caption>Schedule</caption>
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="
+                    col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- Table Row-->
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time datetime="08:30">08:30</time>-<time datetime="11:30">11.30</time>
+                    </td>
+                    <td>Writing Code</td>
+                </tr>
+                <tr>
+                    <th scope="row">Break</th>
+                    <td><time datetime="11:30">11:30</time>-<time datetime="12:30">12.30</time></td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <th scope="row">Afternoon</th>
+                    <td><time datetime="12:30">12:30</time>-<time datetime="16:30">16.30</time></td>
+                    <td>Writing Code</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <br><table>
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Philippe</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Marc</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Eva</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table><br>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Temp</th>
+                    <th scope="col">Mean</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1/9</td>
+                    <td>23</td>
+                    
+                </tr>
+                <tr>
+                    <td>2/9</td>
+                    <td>27</td>
+                    
+                </tr>
+                <tr>
+                    <td>3/9</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>4/9</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>Mean =</td>
+                    <td>26.25</td>
+                </tr>
+            </tfoot>
+        </table>
+        </section>
+        <section>
+            <h2>IFrame</h2>
+            <iframe 
+            id="inlineFrameExample"
+            title="Inline Frame example"
+            width="425" 
+            height="350" 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=18.130595684051517%2C59.27320516058733%2C18.14428567886353%2C59.28019927638898&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=16/59.2767/18.1374">Visa större karta</a></small>></iframe>
+        </section>
+        <section>
+            <h2>Form</h2>
+            <p>Id really like to hear from you</p>
+            <form action="https://httpbin.org/get" method="">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label for="firstName">First Name:</label><br>
+                    <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="Jane"
+                    autocomplete="on"
+                    required
+                    autofocus>
+                    <br><br>
+
+                    <label for="lastName">Last Name:</label><br>
+                    <input 
+                    type="text" 
+                    name="lastName" 
+                    id="lastName"
+                    placeholder="Doe"
+                    autocomplete="on"
+                    required>
+
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="Email">
+                    </p>
+
+                </fieldset>
+
+            </form>
+        </section>
+</main>
+</body>
+</html>
