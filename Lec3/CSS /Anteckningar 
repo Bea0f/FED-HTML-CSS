@@ -1,0 +1,12 @@
+CSS 
+Selector {
+    property: value;
+}
+- Called declaration or rule
+
+Values and units 
+-px
+-em
+-rem
+-%
+

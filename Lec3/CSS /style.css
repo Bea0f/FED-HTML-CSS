@@ -1,0 +1,38 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: url(img/mushroom.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    border-bottom:2px solid #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+#box{
+    background-color:antiquewhite;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+
+#box h2 {
+    text-align: center;
+}
+
+#box p {
+    text-align: justify;
+    text-justify: inter-word;
+}
