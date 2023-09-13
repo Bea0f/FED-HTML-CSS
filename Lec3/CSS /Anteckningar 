@@ -18,8 +18,9 @@ class - can be assigned to mulitple elements. Not unique. A element can have mul
 : - pseudo classes, first-letter osv 
 
 HA KOLL PÅ BOXES
-padding top right bottom left 
-margin top right bottom left 
+padding: top right bottom left 
+margin: top right bottom left 
+margin/padding: top/bottom right/left
 margin använder man för viewpoints storlek
 padding finns runt om varje objekt (element)
 
@@ -42,5 +43,96 @@ använd margin-left: 10000;
 
 <span> inline element (similar to div that is a block element)
 
-specificity calculator - show the specificity order
+specificity calculator - show the specificity order for the selectors
 specificity.keegan.st
+
+example: 
+
+.blue {
+    ....
+}
+
+p .blue {
+    This will apply 
+}
+
+positions absolute, relative, fixed, sticky
+- kolla yt 
+nested classes 
+
+position: static;
+HTML elements are positioned static by default.
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+position: relative;
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+position: fixed;
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+position: absolute;
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+position: sticky;
+An element with position: sticky; is positioned based on the user's scroll position.
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+
+
+section vs div 
+"Authors are strongly encouraged to view the div element as an element of last resort, for when no other element is suitable. Use of the div element instead of more appropriate elements leads to poor accessibility for readers and poor maintainability for authors."
+
+vad gör border-box??
+" It is often useful to set box-sizing to border-box to lay out elements. This makes dealing with the sizes of elements much easier, and generally eliminates a number of pitfalls you can stumble on while laying out your content. On the other hand, when using position: relative or position: absolute, use of box-sizing: content-box allows the positioning values to be relative to the content, and independent of changes to border and padding sizes, which is sometimes desirable."
+
+position:absolute; compared to the nearest parent/ancestor
+
+z-index = lager, 0-->
+
+DRY - dont repeat yourself 
+
+
+flex -
+display:flex;
+flex-direction: column nowrap;
+flex-flow
+
+justify-content = horisontell placering
+align-items = vertikal placering
+
+Notera att när flex-direction är en kolumn så ändras justify-content till vertikalt och align-items till horisontellt.
+
+flex-wrap:
+nowrap: Alla objekt är placerade på en enkel rad.
+wrap: Objekten spiller över till flera rader.
+wrap-reverse: Objekten splller över till flera rader i omvänd ordning.
+
+De två attributen flex-direction och flex-wrap används så ofta tillsammans att en kort version kallad flex-flow skapades för att kombinera dem. Denna korta version accepterar värdena från de två attributen separerade med ett blanksteg.
+
+Grodorna är helt utspridda över dammen men blombladen är samlade i toppen. Man kan använda align-content för att sätta hur multipla rader placeras i förhållande till varandra. Detta attribut accepterar följande värden:
+flex-start: Rader placeras i toppen av containern.
+flex-end: Rader placeras i bottena av containern.
+center: Rader placeras vertikalt i mitten av containern.
+space-between: Raderna får jämn fördelning av utrymmet mellan dem.
+space-around: Raderna får jämn fördelning av utrymmet runt dem.
+stretch: Raderna sträcks ut för att fylla containern.
+Detta kan vara förvirrande, men align-content definierar utrymmet mellan raderna medan align-items definerar hur objekt i sin helhet är placerade i själva containern. När det bara finns en rad har align-content ingen effekt.
+
+om inget annat specificeras så är ordningen 0 (nthchils osv)
+
+CSS Reset 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}

@@ -29,6 +29,10 @@ body {
 }
 header {
     border-bottom:2px solid #ffffff;
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    z-index: 1;
 }
 
 h1 {
@@ -70,6 +74,9 @@ a:hover{
     padding: 20px;
     border-radius: 8px;
     opacity: 80%;
+    position: absolute;
+    top: 150px;
+    z-index: 0;
     
 }
 
@@ -100,4 +107,22 @@ a:hover{
 .box figcaption{
     text-align: center;
     margin: 10px;
+}
+
+.chat {
+    position: fixed;
+    top: 92%;
+    left: 90%;
+}
+
+.chat button {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 12px 12px;
+
+}
+
+.chat img {
+    width: 20px;
+    justify-content: center;
 }
