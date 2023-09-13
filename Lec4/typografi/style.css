@@ -1,0 +1,19 @@
+@font-face {
+    font-family: supermagic;
+    src: url(Super\ Magic.ttf);
+}
+
+body {
+    font-family: "supermagic";
+}
+
+.span {
+    color: red;
+    border:1px dotted black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.span:hover, .span:focus{
+    color: blue;
+}
+
