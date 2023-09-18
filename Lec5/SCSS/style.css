@@ -1,0 +1,55 @@
+/* First SASS file */
+/* Variables*/
+/* $textcolor:pink;
+$textcolor2: purple; */
+/* $primary-color: teal;
+$secondary-color: lightblue; */
+.main {
+  background-color: pink;
+  color: teal;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.main .section {
+  font-weight: 800;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.main .section h1 {
+  color: lightblue;
+  text-decoration: underline;
+  background-color: purple;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.main .section .p1 {
+  font-weight: 300;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.main .section .p2 {
+  color: purple;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.main .main_section {
+  color: white;
+  font-weight: 300;
+}
+.main .main_section p {
+  background-color: teal;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

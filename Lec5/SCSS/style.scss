@@ -1,0 +1,85 @@
+/* First SASS file */
+
+/* Variables*/
+/* $textcolor:pink;
+$textcolor2: purple; */
+$font-style: Helvetica, serif;
+$size: 2rem;
+/* $primary-color: teal;
+$secondary-color: lightblue; */
+$font-weights: (
+    "small": 300,
+    "medium": 600,
+    "bold": 800,
+);
+$mycolors:(
+    "pink2": pink ,
+    "purple2": purple, 
+    "teal2": teal,
+    "lightblue2": lightblue,
+    "vitt": white,
+);
+
+@function weight($weight) {
+    @return map-get($font-weights, $weight);
+}
+
+@function colors($colors) {
+    @return map-get($mycolors, $colors);
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin kanter {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.main {
+    background-color: colors(pink2);
+    color: colors(teal2);
+    font-size: $size;
+    @include center();
+    @include kanter();
+    
+    .section{
+        font-weight: weight(bold);
+        @include kanter();
+
+        h1 {
+            color:colors(lightblue2);
+            text-decoration: underline;
+            background-color: colors(purple2);
+            @include kanter();
+        }
+
+        .p1 {
+            font-weight: weight(small);
+            background-color: colors(lightblue2);
+            @include kanter();
+        }
+
+        .p2 {
+            color: colors(purple2);
+            background-color: colors(vitt);
+            @include kanter();
+        }
+
+    }
+    #{&}_section {
+        color: colors(vitt);
+        font-weight: weight(small);
+        
+
+        p {
+            background-color: colors(teal2);
+            @include kanter();
+        }
+    }
+    
+}
